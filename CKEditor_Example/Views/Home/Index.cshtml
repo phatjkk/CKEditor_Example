@@ -1,0 +1,31 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <script src="https://cdn.ckeditor.com/ckeditor5/31.1.0/classic/ckeditor.js"></script>
+</head>
+<body>
+    <div>
+
+        <form action="Index" method="post">
+            <textarea name="content" id="editor">
+            </textarea>
+            <p><input type="submit" value="Submit"></p>
+        </form>
+        <script>
+            ClassicEditor
+                .create(document.querySelector('#editor'))
+                .catch(error => {
+                    console.error(error);
+                });
+        </script>
+    </div>
+</body>
+</html>
